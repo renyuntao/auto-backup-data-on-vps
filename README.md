@@ -1,5 +1,5 @@
 # 概述                 
-自动定时备份VPS上的网站(http://www.StudyAndShare.info)数据,并将备份好的数据发送到电子邮箱中。                                  
+自动定时备份VPS上的网站(http://www.StudyAndShare.info)数据,并将备份好的数据发送到 `BackupWebsite.sh` 中指定的电子邮箱中。                                  
 
 # 使用方法             
 以 **root** 身份在VPS中执行如下命令:              
@@ -37,7 +37,7 @@
 ```bash
 0 0 * * * /path/to/BackupWebsite.sh   
 ```
-保存文件并退出，之后在每天的0点0分就会自动备份VPS上的数据，并将备份好的数据发送到你的邮箱中。            
+保存文件并退出，之后在每天的0点0分就会自动备份VPS上的数据，并将备份好的数据发送到 `BackupWebsite.sh` 中指定的电子邮箱中。            
 
 # 参考           
 如何在命令行中发送Email:                
