@@ -11,6 +11,7 @@ then
 	rm /tmp/articles.txt
 fi
 
+# Bakcup the data in MySQL database
 mysql -u root -pPassword -D db_name << EOF
 select * from table_name into outfile '/tmp/articles.txt'
 EOF
@@ -30,6 +31,7 @@ then
 	rm /root/Backup/site.tar.bz2
 fi
 
+# Backup a directory, here is '/home/ryt/site/'
 tar -jcvf /root/Backup/site.tar.bz2 /home/ryt/site/
 #################################################################
 
